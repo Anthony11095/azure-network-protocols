@@ -180,6 +180,18 @@ Click **"Create"** to start configuring a new virtual machine (OS, size, region,
 
 <img width="1904" height="857" alt="as you see above, we have created 2 virtual machines on the same network" src="https://github.com/user-attachments/assets/197d994e-1953-4e71-aced-ddbcbe27750d" />
 
+## 🖥️ Virtual Machines Deployed
+
+Two virtual machines are now active in the Azure environment.
+
+### ✅ VM Overview
+
+| Name          | OS             | Status  | Region          | IP Address       |
+|---------------|----------------|---------|------------------|------------------|
+| win10-vm      | Windows 10     | Running | Canada Central   | 20.202.168.85     |
+| ubuntu-vm     | Ubuntu Server  | Running | Canada Central   | 20.202.127.180    |
+
+Both VMs are ready for lab activities including traffic monitoring, protocol testing, and connectivity validation.
 
 
 
