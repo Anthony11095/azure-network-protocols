@@ -221,4 +221,12 @@ These settings allow secure SSH access while maintaining overall network control
 
 <img width="1900" height="867" alt="lab clean up deleting resource groups and VM's" src="https://github.com/user-attachments/assets/4f56c5e9-81dc-42ce-88ef-5dbfe7d2cb32" />
 
+## 🧹 Resource Group Deletion in Progress
+
+The resource group `RG-Network-Activities` is being deleted from the Azure portal.
+
+- A confirmation prompt is displayed
+- All associated resources (VMs, NSGs, IPs) will be permanently removed
+
+This final step completes the lab environment cleanup.
 
