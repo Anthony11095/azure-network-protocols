@@ -219,3 +219,6 @@ The NSG for the Ubuntu VM (`linux-vm-nsg`) shows updated inbound rules.
 
 These settings allow secure SSH access while maintaining overall network control for lab testing.
 
+<img width="1900" height="867" alt="lab clean up deleting resource groups and VM's" src="https://github.com/user-attachments/assets/4f56c5e9-81dc-42ce-88ef-5dbfe7d2cb32" />
+
+
