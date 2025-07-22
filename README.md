@@ -172,13 +172,17 @@ This lab consists of three parts: creating Windows and Linux virtual machines (V
 ## 🖥️ Azure VM Creation - Ready to Begin
 
 The Azure portal currently shows **no virtual machines deployed**. You are at the **Virtual Machines dashboard**, ready to create a new VM.
-
-### ✅ Current Status
 - No VMs listed
 - "Create" button is available to launch VM setup
 
 ### 🔜 Next Step
 Click **"Create"** to start configuring a new virtual machine (OS, size, region, authentication, and network settings).
+
+<img width="1904" height="857" alt="as you see above, we have created 2 virtual machines on the same network" src="https://github.com/user-attachments/assets/197d994e-1953-4e71-aced-ddbcbe27750d" />
+
+
+
+
 
 ``
 
