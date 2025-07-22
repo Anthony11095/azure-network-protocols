@@ -206,5 +206,6 @@ Inbound security rules are being configured for the `linux-vm-nsg` (Ubuntu VM).
 
 This setup ensures proper access for remote connections and lab testing between VMs.
 
-``
+<img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
+
 
