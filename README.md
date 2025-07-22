@@ -196,6 +196,15 @@ Both VMs are ready for lab activities including traffic monitoring, protocol tes
 
 <img width="1889" height="864" alt="opening the network security group to my obunto vm  using   disabiling (inbound) ICMP traffic" src="https://github.com/user-attachments/assets/616f75de-4f8d-49b8-99ef-abcd444a9e44" />
 
+## 🔐 NSG Configuration in Progress
+
+Inbound security rules are being configured for the `linux-vm-nsg` (Ubuntu VM).
+
+### 🛠️ Current Activity
+- SSH (port 22) is allowed
+- A new inbound rule is being added (protocol and port to be defined)
+
+This setup ensures proper access for remote connections and lab testing between VMs.
 
 ``
 
