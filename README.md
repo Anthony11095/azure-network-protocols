@@ -208,4 +208,14 @@ This setup ensures proper access for remote connections and lab testing between 
 
 <img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
 
+## 🔒 Inbound Security Rules - linux-vm-nsg
+
+The NSG for the Ubuntu VM (`linux-vm-nsg`) shows updated inbound rules.
+
+### ✅ Active Rules Summary
+- **SSH (port 22)** is allowed (priority 1000)
+- **Default rules** are in place (VNet, Load Balancer)
+- **All other inbound traffic** is denied by default
+
+These settings allow secure SSH access while maintaining overall network control for lab testing.
 
