@@ -194,6 +194,7 @@ Two virtual machines are now active in the Azure environment.
 Both VMs are ready for lab activities including traffic monitoring, protocol testing, and connectivity validation.
 
 
+<img width="1889" height="864" alt="opening the network security group to my obunto vm  using   disabiling (inbound) ICMP traffic" src="https://github.com/user-attachments/assets/616f75de-4f8d-49b8-99ef-abcd444a9e44" />
 
 
 ``
