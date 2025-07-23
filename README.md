@@ -249,16 +249,50 @@ Proper NSG configuration is critical for maintaining both accessibility and secu
 
 <img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
 
-## 🔒 Inbound Security Rules - linux-vm-nsg
+## Viewing Inbound Security Rules – NSG for Ubuntu VM
 
-The NSG for the Ubuntu VM (`linux-vm-nsg`) shows updated inbound rules.
+![Azure Portal - NSG Inbound Rules for linux-vm-nsg](https://user-images.githubusercontent.com/YOUR_IMAGE_LINK.jpg)
 
-### ✅ Active Rules Summary
-- **SSH (port 22)** is allowed (priority 1000)
-- **Default rules** are in place (VNet, Load Balancer)
-- **All other inbound traffic** is denied by default
+This screenshot shows the **Inbound Security Rules** for a **Network Security Group (NSG)** named `linux-vm-nsg`, which is attached to an Ubuntu virtual machine in Azure. This view displays the current access control rules that govern allowed and denied traffic to the VM.
 
-These settings allow secure SSH access while maintaining overall network control for lab testing.
+### Key Elements Displayed:
+- NSG Name: `linux-vm-nsg`
+- The NSG is actively being managed from within the **Azure Portal**.
+- The **Inbound security rules** tab is selected.
+- A rule allowing SSH traffic (`Port 22`, `Protocol TCP`, `Action: Allow`) is visible and active.
+- Additional default rules for services like RDP, HTTPS, and platform-level access are listed with varying priorities.
+- The bottom status pane confirms:
+  - ✅ **SSH (port 22) is allowed (priority 1000)**
+
+---
+
+### Steps That Led to This Screen:
+
+1. **Deployed an Ubuntu Virtual Machine**
+   - A virtual machine running Ubuntu was provisioned in Azure using the VM wizard.
+   - Region selected: `Canada Central`.
+
+2. **Assigned/Created a Network Security Group (NSG)**
+   - An NSG named `linux-vm-nsg` was either created during VM setup or applied afterward via the Networking tab.
+
+3. **Navigated to NSG Configuration**
+   - Opened the NSG directly or through the VM’s “Networking” settings.
+   - Accessed the **Inbound security rules** section to manage permitted traffic.
+
+4. **Added a Custom Rule**
+   - A new rule was created to allow **TCP traffic on port 22**, which is required for **SSH access** to the VM.
+   - Priority was set (e.g., 1000) to ensure this rule took precedence over broader deny rules.
+
+---
+
+### Purpose of This Step
+
+This screen confirms that:
+- The NSG is correctly configured to allow remote administrative access to the VM.
+- Security rules are actively enforced, controlling which ports and protocols can reach the VM.
+- The environment is ready for secure connections, testing, or further protocol-specific monitoring.
+
+Proper NSG configuration is essential to strike a balance between access and security in cloud environments, especially during networking or cybersecurity labs.
 
 <img width="1900" height="867" alt="lab clean up deleting resource groups and VM's" src="https://github.com/user-attachments/assets/4f56c5e9-81dc-42ce-88ef-5dbfe7d2cb32" />
 
