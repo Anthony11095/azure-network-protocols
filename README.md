@@ -196,15 +196,56 @@ Both VMs are ready for lab activities including traffic monitoring, protocol tes
 
 <img width="1889" height="864" alt="opening the network security group to my obunto vm  using   disabiling (inbound) ICMP traffic" src="https://github.com/user-attachments/assets/616f75de-4f8d-49b8-99ef-abcd444a9e44" />
 
-## 🔐 NSG Configuration in Progress
+## NSG Configuration in Azure – Inbound Security Rules
 
-Inbound security rules are being configured for the `linux-vm-nsg` (Ubuntu VM).
+![Azure Portal - Add Inbound Security Rule](https://user-images.githubusercontent.com/YOUR_IMAGE_LINK.jpg)
 
-### 🛠️ Current Activity
-- SSH (port 22) is allowed
-- A new inbound rule is being added (protocol and port to be defined)
+This screenshot displays the **Azure Network Security Group (NSG)** configuration process, specifically the **inbound security rule setup** for a virtual machine named `linux-vm` running in the `Canada Central` region.
 
-This setup ensures proper access for remote connections and lab testing between VMs.
+The user is in the process of adding a new **inbound security rule** to allow specific traffic into the VM for lab-related purposes such as protocol testing, traffic monitoring, and connectivity validation.
+
+### Key Elements Displayed:
+- The NSG is associated with `linux-vm-nsg`, which is tied to an **Ubuntu Server**.
+- The **Add inbound security rule** pane is open.
+- Configuration fields include:
+  - **Source:** Any
+  - **Source port ranges:** *
+  - **Destination:** Any
+  - **Destination port ranges:** 22 (SSH)
+  - **Protocol:** TCP
+  - **Action:** Allow
+  - **Priority:** Customizable
+  - **Name and Description:** Not fully visible in the screenshot
+
+- Current activity shown at the bottom confirms: `SSH (port 22) is allowed`.
+
+---
+
+### Steps That Led to This Point:
+
+1. **Deployed a Virtual Machine**
+   - A Linux-based virtual machine (Ubuntu Server) was deployed in Azure, located in `Canada Central`.
+
+2. **Created or Assigned a Network Security Group (NSG)**
+   - During VM creation or afterward, a **Network Security Group** was attached to manage traffic rules for the VM’s network interface or subnet.
+
+3. **Navigated to NSG Settings**
+   - From the VM's **Networking** tab or the NSG blade directly, the user accessed the **Inbound security rules** section.
+
+4. **Initiated a New Rule**
+   - Clicked on **"Add inbound port rule"** to configure access permissions.
+   - Configured the rule to allow **SSH traffic (TCP Port 22)**, which is necessary for secure remote access to Linux VMs.
+
+---
+
+### Purpose of This Configuration
+
+This step ensures secure, rule-based traffic flow to the virtual machine. Allowing TCP traffic on port 22 enables administrators to:
+- Remotely connect to the Ubuntu server using SSH
+- Perform lab activities like protocol testing and traffic monitoring
+- Validate end-to-end connectivity for networking and security exercises
+
+Proper NSG configuration is critical for maintaining both accessibility and security in cloud-based virtual environments.
 
 <img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
 
