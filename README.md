@@ -296,12 +296,96 @@ Proper NSG configuration is essential to strike a balance between access and sec
 
 <img width="1900" height="867" alt="lab clean up deleting resource groups and VM's" src="https://github.com/user-attachments/assets/4f56c5e9-81dc-42ce-88ef-5dbfe7d2cb32" />
 
-## 🧹 Resource Group Deletion in Progress
+## Network Protocol Testing Lab – Full Workflow Overview
 
-The resource group `RG-Network-Activities` is being deleted from the Azure portal.
+![Azure Portal - Resource Group Deletion Confirmation](https://user-images.githubusercontent.com/YOUR_IMAGE_LINK.jpg)
 
-- A confirmation prompt is displayed
-- All associated resources (VMs, NSGs, IPs) will be permanently removed
+This lab series demonstrates the full cycle of deploying, configuring, testing, analyzing, and cleaning up an Azure-based network environment involving both **Windows** and **Linux (Ubuntu)** virtual machines. The final screenshot confirms that the resource group `RG-Network-Activities` is being deleted, signaling the completion of all lab tasks.
 
-This final step completes the lab environment cleanup.
+---
+
+### ✅ Objectives Achieved:
+
+- Deployed two VMs in a shared virtual network (Windows 10 and Ubuntu)
+- Analyzed traffic behavior across ICMP, SSH, DHCP, DNS, and RDP protocols
+- Modified NSG rules to simulate real-time network conditions
+- Used Wireshark for live packet analysis
+- Cleaned up all resources to prevent charges
+
+---
+
+### 🛠️ Full Step-by-Step Breakdown:
+
+#### 🖥️ Part 1 – Virtual Machine and Network Setup
+
+1. Log in to the Azure Portal: [https://portal.azure.com](https://portal.azure.com)
+2. Create a new **Resource Group** for the lab environment.
+3. Deploy a **Windows 10 Virtual Machine**:
+   - Assign it to the resource group
+   - Allow it to create a new **Virtual Network** and **Subnet**
+4. Deploy a **Linux (Ubuntu) VM**:
+   - Select the same Resource Group and Virtual Network as the Windows VM
+   - Ensure both machines are on the same subnet
+
+---
+
+#### 🌐 Part 2 – Packet Capture and Protocol Behavior (using Wireshark)
+
+5. Use **Remote Desktop** to connect to the Windows VM.
+6. Install **Wireshark** on the Windows VM.
+7. Start a packet capture session.
+
+##### ICMP (Ping) Test:
+8. Filter for **ICMP traffic only** in Wireshark.
+9. Ping the private IP of the Ubuntu VM from the Windows VM.
+10. Observe ICMP traffic in Wireshark.
+
+##### Simulating Firewall Blocking:
+11. Disable ICMP in the Ubuntu VM's NSG settings.
+12. Attempt the ping again and confirm no response in Wireshark.
+13. Re-enable ICMP in the NSG.
+14. Ping once more and confirm packets are seen again.
+
+##### SSH Protocol Observation:
+15. From the Windows VM, open a terminal and SSH into the Ubuntu VM.
+16. Filter for **SSH traffic only** in Wireshark.
+17. Observe the constant packet flow during SSH session.
+18. Type a few commands, then exit the SSH session.
+
+##### DHCP Behavior:
+19. Filter for **DHCP traffic** in Wireshark.
+20. Use PowerShell to request a new IP address using `ipconfig /renew`.
+21. Observe DHCP request/acknowledgment traffic in Wireshark.
+
+##### DNS Behavior:
+22. Filter for **DNS traffic** in Wireshark.
+23. Use `nslookup` to query IP addresses of domains like `google.com` or `disney.com`.
+24. Confirm the DNS queries are captured and visible in the packet capture.
+
+##### RDP Analysis:
+25. Filter for **RDP traffic only** (`tcp.port == 3389`) in Wireshark.
+26. Observe consistent, non-stop packet traffic as the RDP session remains active—even when idle.
+   - This demonstrates how RDP maintains constant communication to deliver a real-time screen stream.
+
+---
+
+### 🧹 Final Cleanup
+
+27. Close the Remote Desktop session to the Windows VM.
+28. Delete the resource group (`RG-Network-Activities`) from the Azure Portal.
+   - This action permanently removes all associated resources (VMs, NSGs, Public IPs).
+   - A confirmation window is shown prior to deletion.
+
+---
+
+### 🧠 Summary
+
+This hands-on network lab provided a full walkthrough of:
+- Deploying and networking Azure VMs
+- Observing real-time traffic using Wireshark
+- Manipulating NSG rules to simulate access control
+- Interpreting common protocols in use across Windows/Linux platforms
+- Practicing cloud resource hygiene by performing proper teardown
+
+The exercise effectively bridges foundational networking concepts with practical Azure-based cloud infrastructure.
 
