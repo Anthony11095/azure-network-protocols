@@ -72,20 +72,37 @@ On your Windows VM, go to the Start Menu, search for **Windows PowerShell**, rig
 
 ---
 
-
-
-
-
-
-
-
-
-
+### 7. Start Wireshark Packet Capture
 ![image](https://github.com/user-attachments/assets/f72a3287-5e7b-43e0-8c45-fefcd76b1a91)
+Open **Wireshark** and choose your active network adapter (such as Ethernet or Wi-Fi). Then, click on it to begin capturing packets on the network.
 
+---
+
+### 8. Initiate Traffic from the Target VM
 ![image](https://github.com/user-attachments/assets/a3ef4226-247a-4585-b6f1-beb46ab31f7a)
+Use the remote VM or device to generate traffic — like pinging an IP or logging into another system — so Wireshark has data to record. This verifies that communication is flowing through the adapter.
 
+---
+
+### 9. Monitor SSH Traffic in Wireshark
 ![image](https://github.com/user-attachments/assets/d4790b3e-0ceb-48ab-9357-622a7c630f03)
+Use **PowerShell** to SSH into the target system (e.g., `ssh labuser@10.0.0.5`) and observe the traffic in Wireshark. Look for SSH packets to confirm encrypted communication is captured.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/65e7350a-95f2-4fd8-802f-e580f5925342)
 
