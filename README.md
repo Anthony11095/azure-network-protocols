@@ -161,12 +161,23 @@ Attempt to access a domain by IP in the browser. A privacy warning (e.g., “You
 
 ---
 
-
+### 22. Observe Ongoing DNS Query Activity
 ![image](https://github.com/user-attachments/assets/4901f4a2-00d8-4d5a-98a0-ef78bd747e36)
+Wireshark continues capturing standard DNS query and response packets. Confirm that name resolution is ongoing and includes traffic to services like Microsoft, Bing, and Azure.
 
+---
+
+### 23. Analyze TLS and TCP Traffic to a Target Host
 ![image](https://github.com/user-attachments/assets/bfc7912c-e253-4633-881e-8e5704a901a0)
+TLSv1.2 and TCP packets are captured from the source to 125.105.25.178. These show encrypted application data flowing over secured channels. Look for proper handshake completion and consistent stream traffic.
+
+---
+
 
 ![image](https://github.com/user-attachments/assets/9ff43898-410f-4605-83c7-af5b11195b40)
+
+---
+
 
 ![image](https://github.com/user-attachments/assets/24ad47e0-50d9-4cc4-a706-f76bdc6ffb15)
 
