@@ -125,12 +125,25 @@ If restarting the capture, Wireshark will prompt you to save. You may click **"C
 
 ---
 
-
+### 16. Observe Full DHCP Handshake in Wireshark
 ![image](https://github.com/user-attachments/assets/8ad74040-ecfe-4dbf-9304-65bea7429d7c)
+Use Wireshark to verify the full DHCP handshake: **Release**, **Discover**, **Offer**, **Request**, and **ACK** packets. This confirms that your DHCP process is functioning properly.
 
+---
+
+### 17. Execute DHCP Script in PowerShell
 ![image](https://github.com/user-attachments/assets/564d46cf-1c04-4c3a-a14d-a00fde77f2f6)
+Run your DHCP batch script from the `C:\ProgramData` directory. This will release the old IP and request a new one. Use `ipconfig /release` followed by `ipconfig /renew` to see the new address assigned.
 
+---
+
+### 18. Capture DNS Traffic in Wireshark
 ![image](https://github.com/user-attachments/assets/d68a554e-4870-436f-b9e8-7eba1280a2ab)
+Continue monitoring traffic in Wireshark to view DNS queries and responses. Look for standard query packets to confirm that name resolution is working (e.g., responses from Microsoft or cloud services).
+
+---
+
+
 
 ![image](https://github.com/user-attachments/assets/d2db0bd3-c818-4f6f-afd2-17c4b5e8f4ae)
 
