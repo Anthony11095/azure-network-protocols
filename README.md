@@ -186,19 +186,13 @@ Navigate to your Azure portal and view the contents of the `RG-Network-Activitie
 ---
 
 ### 26. Delete the Resource Group to Clean Up
-![image](https://github.com/user-attachments/assets/24ad47e0-50d9-4cc4-a706-f76bdc6ffb15)
+![image](https://github.com/user-attachments/assets/e06a9188-a10c-4125-91ce-874128293e0a)
 Click **Delete resource group**, confirm the name, and proceed. This will permanently remove all listed resources, completing the network protocols lab and restoring your environment.
 
 ---
 
 
----
 
-
-
-
-
-![image](https://github.com/user-attachments/assets/e06a9188-a10c-4125-91ce-874128293e0a)
 
 
 
