@@ -42,24 +42,69 @@ environment.
 
 <img width="1904" height="857" alt="as you see above, we have created 2 virtual machines on the same network" src="https://github.com/user-attachments/assets/197d994e-1953-4e71-aced-ddbcbe27750d" />
 
-
-
 <img width="1889" height="864" alt="opening the network security group to my obunto vm  using   disabiling (inbound) ICMP traffic" src="https://github.com/user-attachments/assets/616f75de-4f8d-49b8-99ef-abcd444a9e44" />
-
-![Azure Portal - Add Inbound Security Rule](https://user-images.githubusercontent.com/YOUR_IMAGE_LINK.jpg)
-
-
 
 <img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
 
+<img width="1900" height="867" alt="lab clean up deleting resource groups and VM's" src="https://github.com/user-attachments/assets/4f56c5e9-81dc-42ce-88ef-5dbfe7d2cb32" />
 
-![Azure Portal - NSG Inbound Rules for linux-vm-nsg](https://user-images.githubusercontent.com/YOUR_IMAGE_LINK.jpg)
+![image](https://github.com/user-attachments/assets/e5d3b7fb-90c7-4120-8594-ec46e6ca3688)
+
+
+![image](https://github.com/user-attachments/assets/f72a3287-5e7b-43e0-8c45-fefcd76b1a91)
+
+![image](https://github.com/user-attachments/assets/a3ef4226-247a-4585-b6f1-beb46ab31f7a)
+
+![image](https://github.com/user-attachments/assets/d4790b3e-0ceb-48ab-9357-622a7c630f03)
+
+![image](https://github.com/user-attachments/assets/65e7350a-95f2-4fd8-802f-e580f5925342)
+
+![image](https://github.com/user-attachments/assets/5118e430-4071-452d-97b5-4ed6a0ffc601)
+
+![image](https://github.com/user-attachments/assets/e11d3ed1-1b36-4c2f-8d01-18a692359818)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <img width="1900" height="867" alt="lab clean up deleting resource groups and VM's" src="https://github.com/user-attachments/assets/4f56c5e9-81dc-42ce-88ef-5dbfe7d2cb32" />
 
-## Network Protocol Testing Lab – Full Workflow Overview
 
-![Azure Portal - Resource Group Deletion Confirmation](https://user-images.githubusercontent.com/YOUR_IMAGE_LINK.jpg)
+
+
+
+
+
+
+
+
 
