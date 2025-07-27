@@ -143,13 +143,24 @@ Continue monitoring traffic in Wireshark to view DNS queries and responses. Look
 
 ---
 
-
-
+### 19. Confirm DNS Query Responses in Wireshark
 ![image](https://github.com/user-attachments/assets/d2db0bd3-c818-4f6f-afd2-17c4b5e8f4ae)
+Continue using Wireshark to validate DNS query and response traffic. Confirm successful domain name resolutions by checking for resolved IP addresses in the Info column.
 
+---
+
+### 20. Use PowerShell to Run `nslookup` Commands
 ![image](https://github.com/user-attachments/assets/9f79d1d6-77ed-4701-a9f4-50a40c3b8d6f)
+In PowerShell, use `nslookup` to resolve domain names like `disney.com` and `pixar.com`. Verify that IP addresses are returned, indicating that DNS resolution is successful.
 
+---
+
+### 21. Trigger an HTTPS Security Warning
 ![image](https://github.com/user-attachments/assets/16ab0822-0942-4ffc-9181-ff2d89562f21)
+Attempt to access a domain by IP in the browser. A privacy warning (e.g., “Your connection isn’t private”) will appear due to certificate name mismatch, which is expected when accessing by IP.
+
+---
+
 
 ![image](https://github.com/user-attachments/assets/4901f4a2-00d8-4d5a-98a0-ef78bd747e36)
 
