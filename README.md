@@ -191,6 +191,11 @@ Click **Delete resource group**, confirm the name, and proceed. This will perman
 
 ---
 
+### 25. Confirm and Finalize Resource Group Deletion
+<img width="1900" height="867" alt="lab clean up deleting resource groups and VM's" src="https://github.com/user-attachments/assets/4f56c5e9-81dc-42ce-88ef-5dbfe7d2cb32" />
+You are prompted with a confirmation dialog before the resource group deletion proceeds. Type the name of the resource group to confirm and click **Delete**. This action is permanent and will remove all associated resources.
+
+
 
 
 
