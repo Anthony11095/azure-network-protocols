@@ -90,25 +90,25 @@ Use **PowerShell** to SSH into the target system (e.g., `ssh labuser@10.0.0.5`) 
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 10. Verify SSH Access and System Info
 ![image](https://github.com/user-attachments/assets/65e7350a-95f2-4fd8-802f-e580f5925342)
+After successfully connecting to the Linux VM via SSH, run commands like `id`, `hostname`, and `uname -a` to verify your access and view system details.
 
+---
+
+### 11. Inspect Encrypted Packet Traffic in Wireshark
 ![image](https://github.com/user-attachments/assets/5118e430-4071-452d-97b5-4ed6a0ffc601)
+Look at the Wireshark capture. You should see SSHv2 protocol traffic labeled as **"Encrypted packet"** — confirming secure communication between devices.
 
+---
+
+### 12. Filter and View DHCP Packets
 ![image](https://github.com/user-attachments/assets/f1d295e8-635f-4a62-8aba-1e54fba4fe5b)
+In Wireshark, use the **filter bar** to enter `dhcp`. This lets you isolate and examine Dynamic Host Configuration Protocol (DHCP) request and acknowledgment packets.
+
+
+
+---
 
 ![image](https://github.com/user-attachments/assets/fcc542c3-1be1-4b6b-85fb-020f051c723b)
 
