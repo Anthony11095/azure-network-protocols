@@ -173,13 +173,29 @@ TLSv1.2 and TCP packets are captured from the source to 125.105.25.178. These sh
 
 ---
 
-
+### 24. Analyze TLSv1.2 Traffic for Secure Communication
 ![image](https://github.com/user-attachments/assets/9ff43898-410f-4605-83c7-af5b11195b40)
+TLSv1.2 and TCP packets are captured between the client and 125.105.25.178. This indicates encrypted traffic over HTTPS. Look for signs of a successful TLS handshake and continued secure stream activity.
+
+---
+
+### 25. Review All Resources Within the Resource Group
+![image](https://github.com/user-attachments/assets/24ad47e0-50d9-4cc4-a706-f76bdc6ffb15)
+Navigate to your Azure portal and view the contents of the `RG-Network-Activities` resource group. Confirm that all lab-related resources (VMs, networks, IPs) are accounted for and ready for cleanup.
+
+---
+
+### 26. Delete the Resource Group to Clean Up
+![image](https://github.com/user-attachments/assets/24ad47e0-50d9-4cc4-a706-f76bdc6ffb15)
+Click **Delete resource group**, confirm the name, and proceed. This will permanently remove all listed resources, completing the network protocols lab and restoring your environment.
 
 ---
 
 
-![image](https://github.com/user-attachments/assets/24ad47e0-50d9-4cc4-a706-f76bdc6ffb15)
+---
+
+
+
 
 
 ![image](https://github.com/user-attachments/assets/e06a9188-a10c-4125-91ce-874128293e0a)
