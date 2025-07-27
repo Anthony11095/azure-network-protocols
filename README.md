@@ -60,15 +60,25 @@ From the **Azure Portal**, go to the **Virtual Machines** section. Confirm that 
 <img width="1889" height="864" alt="opening the network security group to my obunto vm  using   disabiling (inbound) ICMP traffic" src="https://github.com/user-attachments/assets/616f75de-4f8d-49b8-99ef-abcd444a9e44" />
 In the **Network Security Group (NSG)** settings for your VM, go to **Inbound security rules**. Click **+ Add** to create a new rule. Choose your protocol, port, and action, then save it.
 
+### 5. Review Inbound Security Rules
+<img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
+Once your inbound rule has been added, verify it appears in the list with correct settings under **Inbound security rules** for your VM's network security group.
 
+---
+
+### 6. Open PowerShell as Administrator
+![image](https://github.com/user-attachments/assets/e5d3b7fb-90c7-4120-8594-ec46e6ca3688)
+On your Windows VM, go to the Start Menu, search for **Windows PowerShell**, right-click it, and select **Run as administrator** to begin running commands.
 
 ---
 
 
-<img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
 
 
-![image](https://github.com/user-attachments/assets/e5d3b7fb-90c7-4120-8594-ec46e6ca3688)
+
+
+
+
 
 
 ![image](https://github.com/user-attachments/assets/f72a3287-5e7b-43e0-8c45-fefcd76b1a91)
