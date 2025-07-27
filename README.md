@@ -106,17 +106,25 @@ Look at the Wireshark capture. You should see SSHv2 protocol traffic labeled as 
 ![image](https://github.com/user-attachments/assets/f1d295e8-635f-4a62-8aba-1e54fba4fe5b)
 In Wireshark, use the **filter bar** to enter `dhcp`. This lets you isolate and examine Dynamic Host Configuration Protocol (DHCP) request and acknowledgment packets.
 
-
+---
+### 13. Apply UDP Port Filter to Isolate DHCP Traffic
+![image](https://github.com/user-attachments/assets/f3512797-5df5-4bcb-8ca1-937a583414a0)
+In Wireshark, enter the filter `udp.port == 67 || udp.port == 68` to focus only on DHCP traffic. This helps validate the exchange between client and server.
 
 ---
 
-![image](https://github.com/user-attachments/assets/fcc542c3-1be1-4b6b-85fb-020f051c723b)
-
-![image](https://github.com/user-attachments/assets/f3512797-5df5-4bcb-8ca1-937a583414a0)
-
+### 14. Save the Packet Capture File
 ![image](https://github.com/user-attachments/assets/b43a34c3-57f7-4620-8818-d75e975b4c00)
+After capturing DHCP packets, save the capture session by selecting **File > Save As**, then name your file (e.g., `dhcp.pcap`) and choose a save location.
 
+---
+
+### 15. Confirm or Skip Saving Before Restarting
 ![image](https://github.com/user-attachments/assets/91921ef0-3258-49ed-b65a-31c2d4ccc42c)
+If restarting the capture, Wireshark will prompt you to save. You may click **"Continue without Saving"** to skip or **"Save before Continue"** if you need the data.
+
+---
+
 
 ![image](https://github.com/user-attachments/assets/8ad74040-ecfe-4dbf-9304-65bea7429d7c)
 
