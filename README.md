@@ -18,7 +18,21 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
+## 🔧 Prerequisites
 
+Before starting the osTicket installation, make sure the following requirements are met:
+
+- Operating System: Windows 10 Pro or higher  
+- Virtualization Platform: Hyper-V, VirtualBox, or VMware  
+- Internet Connection  
+- Virtual Machine (VM) setup completed  
+- osTicket installation ZIP file downloaded from the official site  
+- Web Server: IIS (Internet Information Services)  
+- PHP (version 7.3+ recommended)  
+- MySQL Server (or MariaDB)  
+- SMTP Email Relay (optional, for email functionality)
+
+Ensure that all tools are installed and available on your system before beginning the installation steps.
 environment.
 
 <h2>Actions and Observations</h2>
