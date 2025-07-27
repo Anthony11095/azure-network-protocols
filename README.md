@@ -50,12 +50,20 @@ Go to **Microsoft Azure Portal**, navigate to **Virtual Machines** under **Compu
 After deployment, go back to the **Virtual Machines** list to confirm your machines are running.
 
 ---
-<p>
-
-
+### 3. Confirm Virtual Machines Are Running
 <img width="1904" height="857" alt="as you see above, we have created 2 virtual machines on the same network" src="https://github.com/user-attachments/assets/197d994e-1953-4e71-aced-ddbcbe27750d" />
+From the **Azure Portal**, go to the **Virtual Machines** section. Confirm that your VMs (e.g., Linux and Windows) are listed as "Running" under the **Status** column.
 
+---
+
+### 4. Add an Inbound Security Rule
 <img width="1889" height="864" alt="opening the network security group to my obunto vm  using   disabiling (inbound) ICMP traffic" src="https://github.com/user-attachments/assets/616f75de-4f8d-49b8-99ef-abcd444a9e44" />
+In the **Network Security Group (NSG)** settings for your VM, go to **Inbound security rules**. Click **+ Add** to create a new rule. Choose your protocol, port, and action, then save it.
+
+
+
+---
+
 
 <img width="1901" height="835" alt="network security group ubuntu vm is using   disabiling inbound ICMP traffic" src="https://github.com/user-attachments/assets/ee0f19a7-8636-4a03-9a88-96aa038eddee" />
 
