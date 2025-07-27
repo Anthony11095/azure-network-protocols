@@ -35,10 +35,23 @@ Before starting the osTicket installation, make sure the following requirements 
 Ensure that all tools are installed and available on your system before beginning the installation steps.
 environment.
 
-<h2>Actions and Observations</h2>
+## 🔧 Installation Steps
 
-<p>
+---
+
+### 1. Open Virtual Machines in Azure Portal
 <img width="1897" height="866" alt="creating Azure virtual machine lab 2" src="https://github.com/user-attachments/assets/af2a197b-49c4-4e71-acf5-b10fac6242df" />
+Go to **Microsoft Azure Portal**, navigate to **Virtual Machines** under **Compute**, and click **+ Create** to begin creating a new virtual machine.
+
+---
+
+### 2. View Deployed Virtual Machines
+<img width="1904" height="857" alt="as you see above, we have created 2 virtual machines on the same network" src="https://github.com/user-attachments/assets/197d994e-1953-4e71-aced-ddbcbe27750d" />
+After deployment, go back to the **Virtual Machines** list to confirm your machines are running.
+
+---
+<p>
+
 
 <img width="1904" height="857" alt="as you see above, we have created 2 virtual machines on the same network" src="https://github.com/user-attachments/assets/197d994e-1953-4e71-aced-ddbcbe27750d" />
 
